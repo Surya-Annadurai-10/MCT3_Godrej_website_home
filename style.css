@@ -1,0 +1,584 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.nav-section{
+    width: 100%;
+    height:10%;
+  padding: 0 1.3rem;
+    display: flex;
+    padding-right:1.7rem;
+    justify-content: space-between;
+    align-items: center;
+  position: fixed;
+    background: #fff;
+    z-index: 100;
+    box-shadow: 1px 0 1px rgb(94, 94, 94);
+}
+
+.nav-content-section  a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1rem;    
+}
+
+.right-section{
+    display: flex;
+    justify-content: space-around;
+    gap: 2.6rem;
+    align-items: center;
+}
+
+.nav-section img{
+    width: 220px;
+}
+
+.underline{
+    width:0%;
+    height: 2px;
+    background-color: black;
+    transition: 0.2s;
+    transition-timing-function: ease-out;
+    margin-top: 3px;
+    border-radius: 1px;
+}
+
+
+
+.nav-content-section:hover .underline{
+    width: 100%;
+}
+
+.know-us-nav p{
+    width: fit-content;
+}
+
+.know-us-nav p:hover{
+    font-weight:bold;
+    
+}
+
+.know-us-nav{
+    width: 100%;
+    height: 85px;
+    position:absolute;
+    top:100%;
+    left: 0;
+    right: 0;
+    background-color:rgba(0, 0, 0, 0.85);
+    color: white;
+    z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3.3rem;
+    padding-right: 5rem;
+    font-size: 1.1rem;
+    visibility:hidden;
+    transition-duration: 0.5s;
+}
+
+.nav-content-section:hover  .know-us-nav{
+   visibility: visible;
+   
+}
+
+.box{
+    color: white;
+    font-size: 2rem;
+}
+
+.top-section{
+    width: 100%;
+    height:10vh;
+    background-color: white;
+}
+
+.hero-section{
+    display: grid;
+    grid-template-columns: repeat(5,20%);
+    grid-template-rows: repeat(3,215px);
+    grid-template-areas: 
+    "women chemicals consumer properties agrovet"
+    "women chemicals consumer industries agrovet"
+    "women godrej-logo consumer capital agrovet";
+}
+
+.women{
+    grid-area: women;
+}
+
+.chemicals{
+    grid-area:chemicals;
+    position: relative;
+    
+}
+
+.godrej-logo{
+    grid-area: godrej-logo;
+    
+}
+
+.consumer{
+    grid-area: consumer;
+    position: relative;
+}
+
+.properties{
+    grid-area:properties;
+    position: relative;
+    
+}
+
+.industries{
+    grid-area: industries;
+    
+}
+
+.capital{
+    grid-area: capital;
+   position:relative;
+}
+
+.agrovet{
+    grid-area: agrovet;
+    position: relative;
+}
+
+.hero-section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+ .grid-heading{
+    position: absolute;
+    top:25px;
+    left:25px;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+
+.section1{
+    width: 100%;
+    height: 58vh;
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1 img{
+    width: 200px;
+}
+
+.delight{
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin-top: 1.5rem;
+}
+
+hr{
+    height: 0.5px;
+    border:0;
+    background-color: rgb(206, 206, 206);
+}
+
+.main-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-heading-business{
+    margin-top:7rem ;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding:7rem 5rem;
+}
+
+.agrovet-container{
+    max-width: 25vw;
+    height: 70vh;
+    box-shadow: 0 0 10px 5px #F2F2F2;
+   
+}
+
+
+
+.img-container{
+    width: 350px;
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+.img-container img{
+    width: 350px;
+    height: 350px;
+}
+
+.agrovet-heading{
+    width: 220px;
+    text-align: center;
+    margin: auto;
+    margin-top: 2rem;
+    
+}
+
+/* .agrovet-heading-2{
+    width: 120px;
+    text-align: center;
+    margin: auto;
+    margin-top: 2rem;
+    
+} */
+
+
+
+.agro-heading{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+.explore{
+    width: 58px;
+    margin: auto;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+.explore a{
+    text-decoration: none;
+    color: black;
+}
+
+.thin{
+    width:0%;
+    height: 1px;
+    background-color: black;
+    transition: 0.2s;
+    transition-timing-function: ease-out;
+    margin-top: 3px;
+    border-radius:0.5px;
+}
+
+.explore:hover .thin{
+    width: 100%;
+}
+
+
+.section2-img-section img{
+   width: 88%;
+   height:100% ;
+   object-fit: cover;
+   object-position: center;
+   
+}
+
+.section2-page1{
+    width: 100%;
+    /* height: ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2-img-section{
+    width: 50%;
+    
+}
+
+
+
+.section2-animation-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 100vh;
+    /* background-color: pink; */
+    /* box-shadow: 0 0 10px grey; */
+}
+
+.section2{
+    width: 100%;
+    height: 115vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: cyan; */
+}
+
+
+.content-section h2{
+    color: #4CE0E0;
+    font-weight: 900;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.content-section-para1{
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+    /* font-weight: bold; */
+    margin-bottom: 2.5rem;
+}
+
+.content-section-para2{
+    color:#AAACAF;
+    line-height: 2rem;
+    margin-bottom:2.5rem;
+    font-size: 1.2rem;
+}
+
+.content-section{
+    width: 40%;
+    /* background-color: red; */
+    padding-left: 5rem;
+    
+}
+
+.explore-section2{
+    width: 58px;
+    margin-top:4rem;
+}
+
+.explore-section2 a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #000;
+}
+
+.explore-section2:hover .thin{
+    width:100%
+}
+
+.traffic-container{
+display: flex;
+}
+
+.light{
+    width: 50px;
+    height: 1.5px;
+    background-color: black;
+    margin-right: 0.8rem;
+    margin-top: -1rem;
+
+}
+
+
+.section3{
+    width: 100%;
+    height: 83vh;
+    /* background-color: pink; */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.section3-top{
+    width: 25%;
+   
+    /* background-color: pink; */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+
+.section3-heading{
+    color: #4CE0E0;
+    font-size: 1.3rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+
+.section3-heading{
+  text-decoration: none;
+}
+
+.section3-para1{
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+    /* font-weight: bold; */
+    margin-bottom: 2.5rem;
+}
+
+.section3-para2{
+    color:#B4B6B8;
+    line-height: 2.2rem;
+    margin-bottom:2.5rem;
+    font-size: 1.2rem;
+}
+
+.explore-section3{
+    width: 58px;
+    margin-top: 1rem;
+}
+
+.explore-section3 a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #000;
+}
+
+.explore-section3:hover .thin{
+    width:100%
+}
+
+.section3-usd{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 2.5rem;
+}
+
+.usd-revenue h1{
+    font-size: 3rem;
+    color: #4CE0E0;
+}
+
+.usd-revenue p{
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 0.8rem;
+}
+
+.usd-revenue{
+    width: 250px;
+    text-align: center;
+   
+}
+
+.col li{
+ list-style-type: none;
+ color:#AEAFB2;
+ margin-bottom: 0.6rem;
+}
+
+.col  a{
+    text-decoration: none;
+    color:#AEAFB2 ;
+}
+
+.col h2{
+    color: #3C3C3B;
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+}
+
+.footer-para{
+    color :#AEAFB2;
+    line-height: 1.9rem;
+}
+
+.footer-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    gap: 7rem;
+}
+
+.col{
+    width: 25%;
+    height: 30vh;
+    /* background-color: pink; */
+    font-size: 1.1rem;
+    
+}
+
+.col-2 li{
+    width: 100px;
+    height: 17px;
+}
+
+.col-2 li:first-child{
+    font-weight: bold;
+}
+
+.col-2 li:hover{
+    font-weight: bold;
+}
+
+
+.col-2 {
+    width: 12%;
+}
+
+.col-3 li{
+    margin-bottom: 0.6rem;
+}
+
+.last-child{
+    margin-top: 2rem;
+}
+
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+    background-color: #212120;
+    color: white;
+    padding: 0 13%;
+    
+}
+
+.left{
+  display: flex;
+  width: 10%;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: red ; */
+}
+
+.left a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.left a:hover{
+    font-weight: bold;
+}
+
+.right p{
+    font-size: 0.9rem;
+    
+}
+
+.back-to-top img{
+    width: 50px;
+    position:fixed;
+    right: 1%;
+    bottom: 2%;
+}
